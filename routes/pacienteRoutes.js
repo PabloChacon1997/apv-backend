@@ -18,6 +18,7 @@ router
 
 router
   .route("/:id")
+
   .get(checkAuth, obtenerPaciente)
   .put(checkAuth, actualizarPaciente)
   .delete(checkAuth, eliminarPaciente);
